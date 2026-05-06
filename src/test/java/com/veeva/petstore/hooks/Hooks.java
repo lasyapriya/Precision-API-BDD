@@ -10,10 +10,12 @@ import org.apache.logging.log4j.Logger;
 public class Hooks {
 
     private static final Logger log = LogManager.getLogger(Hooks.class);
-    private final ScenarioContext context;
 
-    public Hooks(ScenarioContext context) {
-        this.context = context;
+    // ✅ Create context manually (no injection)
+    private ScenarioContext context = new ScenarioContext();
+
+    // ✅ Default constructor (VERY IMPORTANT)
+    public Hooks() {
     }
 
     @Before

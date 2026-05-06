@@ -11,6 +11,7 @@ import static io.restassured.RestAssured.given;
 
 public class PetClient {
 
+
     private static final Logger log = LogManager.getLogger(PetClient.class);
     private static final String BASE_URL = "https://petstore.swagger.io/v2";
 
